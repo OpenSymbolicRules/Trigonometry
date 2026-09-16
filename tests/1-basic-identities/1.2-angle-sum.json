@@ -1,0 +1,23 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "1.2",
+  "title": "Angle Sum and Difference Tests",
+  "tests": [
+    {
+      "id": 1,
+      "expression": ["Sin", ["Add", "x", "y"]],
+      "variable": "x",
+      "expected_result": ["Add", ["Multiply", ["Sin", "x"], ["Cos", "y"]], ["Multiply", ["Cos", "x"], ["Sin", "y"]]],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "expression": ["Cos", ["Subtract", "x", "y"]],
+      "variable": "x",
+      "expected_result": ["Add", ["Multiply", ["Cos", "x"], ["Cos", "y"]], ["Multiply", ["Sin", "x"], ["Sin", "y"]]],
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "1.2",
+  "title": "Angle Sum and Difference Identities",
+  "semantics": {
+    "Add": "openmath:arith1#plus",
+    "Subtract": "openmath:arith1#minus",
+    "Multiply": "openmath:arith1#times",
+    "Sin": "openmath:transc1#sin",
+    "Cos": "openmath:transc1#cos"
+  },
+  "rules": [
+    {"id": 1, "description": "Sine angle-sum identity", "pattern": ["Sin", ["Add", "x_", "y_"]], "constraints": [], "result": ["Add", ["Multiply", ["Sin", "x_"], ["Cos", "y_"]], ["Multiply", ["Cos", "x_"], ["Sin", "y_"]]]},
+    {"id": 2, "description": "Cosine angle-difference identity", "pattern": ["Cos", ["Subtract", "x_", "y_"]], "constraints": [], "result": ["Add", ["Multiply", ["Cos", "x_"], ["Cos", "y_"]], ["Multiply", ["Sin", "x_"], ["Sin", "y_"]]]}
+  ]
+}

@@ -6,6 +6,9 @@ This repository hosts the **Trigonometry** domain for the OpenSymbolicRules (OSR
 - Fundamental trigonometric identities (Pythagorean, Angle Addition, Double Angle).
 - Definitions and reductions.
 
+Each mathematical operator is explicitly mapped to its OpenMath Content Dictionary
+symbol in the corresponding rule file.
+
 ## Validation
 To validate the rules against the OSR schemas, run:
 ```bash
