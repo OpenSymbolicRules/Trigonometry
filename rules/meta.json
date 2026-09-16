@@ -1,0 +1,15 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "osr_version": "0.1.0",
+  "domain": "trigonometry",
+  "title": "Open Symbolic Rules - Trigonometry",
+  "description": "Trigonometric rewrite and simplification rules.",
+  "load_order": [
+    "1-basic-identities/1.1-pythagorean.json"
+  ],
+  "rule_count": 1,
+  "test_count": 1,
+  "feature_flags": {
+    "trigonometric_simplification": true
+  }
+}

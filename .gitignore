@@ -1,0 +1,16 @@
+# --- Gitallow Pattern ---
+*
+!*/
+!.*
+!*.md
+!*.json
+!*.sh
+
+.git/
+.DS_Store
+.claude/
+.specify/
+CLAUDE.md
+AGENTS.md
+spec.md
+specs/
