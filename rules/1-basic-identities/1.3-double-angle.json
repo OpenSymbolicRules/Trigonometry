@@ -1,0 +1,16 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "1.3",
+  "title": "Double Angle Identities",
+  "semantics": {
+    "Multiply": "openmath:arith1#times",
+    "Subtract": "openmath:arith1#minus",
+    "Power": "openmath:arith1#power",
+    "Sin": "openmath:transc1#sin",
+    "Cos": "openmath:transc1#cos"
+  },
+  "rules": [
+    {"id": 1, "description": "Sine double-angle identity", "pattern": ["Sin", ["Multiply", 2, "x_"]], "constraints": [], "result": ["Multiply", 2, ["Sin", "x_"], ["Cos", "x_"]]},
+    {"id": 2, "description": "Cosine double-angle identity", "pattern": ["Cos", ["Multiply", 2, "x_"]], "constraints": [], "result": ["Subtract", ["Power", ["Cos", "x_"], 2], ["Power", ["Sin", "x_"], 2]]}
+  ]
+}
