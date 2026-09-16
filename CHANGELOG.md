@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Sine angle-sum and cosine angle-difference identities with OpenMath semantics.
 - Sine and cosine double-angle identities with OpenMath semantics.
 - GitHub Actions validation of schemas, rules, and test fixtures.
+- MIT licensing, an OpenMath attribution notice, and SPDX metadata in the rule manifest.
 
 ### Changed
 - Normalized arithmetic operators and wildcards to OSR v0.1 conventions.

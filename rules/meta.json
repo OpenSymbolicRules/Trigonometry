@@ -4,6 +4,7 @@
   "domain": "trigonometry",
   "title": "Open Symbolic Rules - Trigonometry",
   "description": "Trigonometric rewrite and simplification rules.",
+  "license": "MIT",
   "load_order": [
     "1-basic-identities/1.1-pythagorean.json",
     "1-basic-identities/1.2-angle-sum.json",
