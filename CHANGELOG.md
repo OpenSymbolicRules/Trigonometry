@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- CI validation that every operator used by a rule has a declared OpenMath
+  semantic mapping.
 - Sum-to-product identities in a dedicated `sum_to_product` profile, keeping
   the opposite product-to-sum orientation out of that profile.
 - Stable `identity` values for rule files, completing canonical `identity:id`
