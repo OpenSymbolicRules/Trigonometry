@@ -1,0 +1,15 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "2.1",
+  "title": "Tangent Inverse Tests",
+  "tests": [
+    {
+      "id": 1,
+      "expression": ["Tan", ["Atan", "z"]],
+      "variable": "z",
+      "expected_result": "z",
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}

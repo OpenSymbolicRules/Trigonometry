@@ -14,6 +14,9 @@ The product-to-sum rules are independently encoded from the MathJSON Fungrim
 corpus entries `012eba` and `ad6c1c`; their complex-domain assumptions permit
 unconditional use of these analytic identities.
 
+The inverse-tangent cancellation follows Fungrim entry `1f026d`; the reverse
+direction is excluded because it requires a principal-branch restriction.
+
 ## Validation
 To validate the rules against the OSR schemas, run:
 ```bash

@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   OpenMath semantics and Fungrim-derived fixtures.
 - Sine-square and cosine-square power-reduction identities, with OpenMath
   semantics and fixtures.
+- Complex-domain cancellation rule `tan(atan(z)) = z`, encoded from Fungrim.
 - Initial trigonometric rules structure.
 - Pythagorean identity rule.
 - Sine angle-sum and cosine angle-difference identities with OpenMath semantics.

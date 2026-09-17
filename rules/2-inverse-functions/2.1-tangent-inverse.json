@@ -1,0 +1,19 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "identity": "trigonometry:2-inverse-functions/2.1-tangent-inverse",
+  "section": "2.1",
+  "title": "Tangent and Inverse Tangent",
+  "semantics": {
+    "Tan": "openmath:transc1#tan",
+    "Atan": "openmath:transc1#arctan"
+  },
+  "rules": [
+    {
+      "id": 1,
+      "description": "Tangent cancels the principal inverse tangent for complex arguments (Fungrim 1f026d).",
+      "pattern": ["Tan", ["Atan", "z_"]],
+      "constraints": [],
+      "result": "z_"
+    }
+  ]
+}

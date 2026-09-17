@@ -10,10 +10,11 @@
     "1-basic-identities/1.2-angle-sum.json",
     "1-basic-identities/1.3-double-angle.json",
     "1-basic-identities/1.4-product-to-sum.json",
-    "1-basic-identities/1.5-power-reduction.json"
+    "1-basic-identities/1.5-power-reduction.json",
+    "2-inverse-functions/2.1-tangent-inverse.json"
   ],
-  "rule_count": 9,
-  "test_count": 9,
+  "rule_count": 10,
+  "test_count": 10,
   "feature_flags": {
     "trigonometric_simplification": true
   }
