@@ -1,0 +1,40 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "identity": "trigonometry:1-basic-identities/1.6-sum-to-product",
+  "section": "1.6",
+  "title": "Sum-to-Product Identities",
+  "semantics": {
+    "Add": "openmath:arith1#plus",
+    "Subtract": "openmath:arith1#minus",
+    "Multiply": "openmath:arith1#times",
+    "Divide": "openmath:arith1#divide",
+    "Sin": "openmath:transc1#sin",
+    "Cos": "openmath:transc1#cos"
+  },
+  "rules": [
+    {
+      "id": 1,
+      "description": "Sum-to-product identity for two sines.",
+      "pattern": ["Add", ["Sin", "a_"], ["Sin", "b_"]],
+      "constraints": [],
+      "result": ["Multiply", 2, ["Sin", ["Divide", ["Add", "a_", "b_"], 2]], ["Cos", ["Divide", ["Subtract", "a_", "b_"], 2]]],
+      "provenance": {"method": "authored", "sources": [{"name": "OpenSymbolicRules Trigonometry", "locator": "trigonometry:1-basic-identities/1.6-sum-to-product:1"}]}
+    },
+    {
+      "id": 2,
+      "description": "Sum-to-product identity for two cosines.",
+      "pattern": ["Add", ["Cos", "a_"], ["Cos", "b_"]],
+      "constraints": [],
+      "result": ["Multiply", 2, ["Cos", ["Divide", ["Add", "a_", "b_"], 2]], ["Cos", ["Divide", ["Subtract", "a_", "b_"], 2]]],
+      "provenance": {"method": "authored", "sources": [{"name": "OpenSymbolicRules Trigonometry", "locator": "trigonometry:1-basic-identities/1.6-sum-to-product:2"}]}
+    },
+    {
+      "id": 3,
+      "description": "Difference-to-product identity for two cosines.",
+      "pattern": ["Subtract", ["Cos", "a_"], ["Cos", "b_"]],
+      "constraints": [],
+      "result": ["Multiply", -2, ["Sin", ["Divide", ["Add", "a_", "b_"], 2]], ["Sin", ["Divide", ["Subtract", "a_", "b_"], 2]]],
+      "provenance": {"method": "authored", "sources": [{"name": "OpenSymbolicRules Trigonometry", "locator": "trigonometry:1-basic-identities/1.6-sum-to-product:3"}]}
+    }
+  ]
+}

@@ -13,8 +13,21 @@
     "1-basic-identities/1.5-power-reduction.json",
     "2-inverse-functions/2.1-tangent-inverse.json"
   ],
-  "rule_count": 10,
-  "test_count": 10,
+  "profiles": {
+    "sum_to_product": {
+      "description": "Complete manifest for sum-to-product conversion; it excludes product-to-sum rules to prevent orientation cycles.",
+      "load_order": [
+        "1-basic-identities/1.1-pythagorean.json",
+        "1-basic-identities/1.2-angle-sum.json",
+        "1-basic-identities/1.3-double-angle.json",
+        "1-basic-identities/1.5-power-reduction.json",
+        "1-basic-identities/1.6-sum-to-product.json",
+        "2-inverse-functions/2.1-tangent-inverse.json"
+      ]
+    }
+  },
+  "rule_count": 13,
+  "test_count": 13,
   "feature_flags": {
     "trigonometric_simplification": true
   }

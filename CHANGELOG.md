@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Sum-to-product identities in a dedicated `sum_to_product` profile, keeping
+  the opposite product-to-sum orientation out of that profile.
 - Stable `identity` values for rule files, completing canonical `identity:id`
   rule identifiers.
 - Product-to-sum identities for `sin(a) cos(b)` and `sin(a) sin(b)`, with

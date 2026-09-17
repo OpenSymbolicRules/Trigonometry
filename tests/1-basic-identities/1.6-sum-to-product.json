@@ -1,0 +1,31 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "1.6",
+  "title": "Sum-to-Product Identity Tests",
+  "tests": [
+    {
+      "id": 1,
+      "expression": ["Add", ["Sin", "a"], ["Sin", "b"]],
+      "variable": "a",
+      "expected_result": ["Multiply", 2, ["Sin", ["Divide", ["Add", "a", "b"], 2]], ["Cos", ["Divide", ["Subtract", "a", "b"], 2]]],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "expression": ["Add", ["Cos", "a"], ["Cos", "b"]],
+      "variable": "a",
+      "expected_result": ["Multiply", 2, ["Cos", ["Divide", ["Add", "a", "b"], 2]], ["Cos", ["Divide", ["Subtract", "a", "b"], 2]]],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 3,
+      "expression": ["Subtract", ["Cos", "a"], ["Cos", "b"]],
+      "variable": "a",
+      "expected_result": ["Multiply", -2, ["Sin", ["Divide", ["Add", "a", "b"], 2]], ["Sin", ["Divide", ["Subtract", "a", "b"], 2]]],
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}
