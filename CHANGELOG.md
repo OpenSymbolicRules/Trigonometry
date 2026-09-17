@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Stable `identity` values for rule files, completing canonical `identity:id`
+  rule identifiers.
 - Initial trigonometric rules structure.
 - Pythagorean identity rule.
 - Sine angle-sum and cosine angle-difference identities with OpenMath semantics.

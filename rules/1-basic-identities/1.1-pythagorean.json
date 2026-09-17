@@ -13,10 +13,29 @@
     {
       "id": 1,
       "description": "Pythagorean Identity: sin^2(x) + cos^2(x) = 1",
-      "pattern": ["Add", ["Power", ["Sin", "x_"], 2], ["Power", ["Cos", "x_"], 2]],
+      "pattern": [
+        "Add",
+        [
+          "Power",
+          [
+            "Sin",
+            "x_"
+          ],
+          2
+        ],
+        [
+          "Power",
+          [
+            "Cos",
+            "x_"
+          ],
+          2
+        ]
+      ],
       "constraints": [],
       "result": 1,
       "comment": "Fundamental trigonometric identity."
     }
-  ]
+  ],
+  "identity": "trigonometry:1-basic-identities/1.1-pythagorean"
 }
