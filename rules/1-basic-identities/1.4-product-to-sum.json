@@ -15,16 +15,98 @@
     {
       "id": 1,
       "description": "Product-to-sum identity for sine times cosine over the complex domain (Fungrim 012eba).",
-      "pattern": ["Multiply", ["Sin", "a_"], ["Cos", "b_"]],
+      "pattern": [
+        "Multiply",
+        [
+          "Sin",
+          "a_"
+        ],
+        [
+          "Cos",
+          "b_"
+        ]
+      ],
       "constraints": [],
-      "result": ["Divide", ["Add", ["Sin", ["Add", "a_", "b_"]], ["Sin", ["Subtract", "a_", "b_"]]], 2]
+      "result": [
+        "Divide",
+        [
+          "Add",
+          [
+            "Sin",
+            [
+              "Add",
+              "a_",
+              "b_"
+            ]
+          ],
+          [
+            "Sin",
+            [
+              "Subtract",
+              "a_",
+              "b_"
+            ]
+          ]
+        ],
+        2
+      ],
+      "provenance": {
+        "method": "transcribed",
+        "sources": [
+          {
+            "name": "Fungrim MathJSON",
+            "locator": "corpus/sine.json#012eba"
+          }
+        ]
+      }
     },
     {
       "id": 2,
       "description": "Product-to-sum identity for two sines over the complex domain (Fungrim ad6c1c).",
-      "pattern": ["Multiply", ["Sin", "a_"], ["Sin", "b_"]],
+      "pattern": [
+        "Multiply",
+        [
+          "Sin",
+          "a_"
+        ],
+        [
+          "Sin",
+          "b_"
+        ]
+      ],
       "constraints": [],
-      "result": ["Divide", ["Subtract", ["Cos", ["Subtract", "a_", "b_"]], ["Cos", ["Add", "a_", "b_"]]], 2]
+      "result": [
+        "Divide",
+        [
+          "Subtract",
+          [
+            "Cos",
+            [
+              "Subtract",
+              "a_",
+              "b_"
+            ]
+          ],
+          [
+            "Cos",
+            [
+              "Add",
+              "a_",
+              "b_"
+            ]
+          ]
+        ],
+        2
+      ],
+      "provenance": {
+        "method": "transcribed",
+        "sources": [
+          {
+            "name": "Fungrim MathJSON",
+            "locator": "corpus/sine.json#ad6c1c"
+          }
+        ]
+      }
     }
   ]
 }

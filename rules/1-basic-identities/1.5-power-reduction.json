@@ -16,16 +16,78 @@
     {
       "id": 1,
       "description": "Sine-square power reduction over the complex domain (Fungrim cf6e35).",
-      "pattern": ["Power", ["Sin", "x_"], 2],
+      "pattern": [
+        "Power",
+        [
+          "Sin",
+          "x_"
+        ],
+        2
+      ],
       "constraints": [],
-      "result": ["Divide", ["Subtract", 1, ["Cos", ["Multiply", 2, "x_"]]], 2]
+      "result": [
+        "Divide",
+        [
+          "Subtract",
+          1,
+          [
+            "Cos",
+            [
+              "Multiply",
+              2,
+              "x_"
+            ]
+          ]
+        ],
+        2
+      ],
+      "provenance": {
+        "method": "transcribed",
+        "sources": [
+          {
+            "name": "Fungrim MathJSON",
+            "locator": "corpus/sine.json#cf6e35"
+          }
+        ]
+      }
     },
     {
       "id": 2,
       "description": "Cosine-square power reduction, following from the Pythagorean and cosine double-angle identities.",
-      "pattern": ["Power", ["Cos", "x_"], 2],
+      "pattern": [
+        "Power",
+        [
+          "Cos",
+          "x_"
+        ],
+        2
+      ],
       "constraints": [],
-      "result": ["Divide", ["Add", 1, ["Cos", ["Multiply", 2, "x_"]]], 2]
+      "result": [
+        "Divide",
+        [
+          "Add",
+          1,
+          [
+            "Cos",
+            [
+              "Multiply",
+              2,
+              "x_"
+            ]
+          ]
+        ],
+        2
+      ],
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Trigonometry",
+            "locator": "trigonometry:1-basic-identities/1.5-power-reduction:2"
+          }
+        ]
+      }
     }
   ]
 }

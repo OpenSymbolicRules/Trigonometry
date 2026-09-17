@@ -46,7 +46,16 @@
             "y_"
           ]
         ]
-      ]
+      ],
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Trigonometry",
+            "locator": "trigonometry:1-basic-identities/1.2-angle-sum:1"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -84,7 +93,16 @@
             "y_"
           ]
         ]
-      ]
+      ],
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Trigonometry",
+            "locator": "trigonometry:1-basic-identities/1.2-angle-sum:2"
+          }
+        ]
+      }
     }
   ],
   "identity": "trigonometry:1-basic-identities/1.2-angle-sum"

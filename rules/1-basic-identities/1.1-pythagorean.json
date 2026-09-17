@@ -34,7 +34,16 @@
       ],
       "constraints": [],
       "result": 1,
-      "comment": "Fundamental trigonometric identity."
+      "comment": "Fundamental trigonometric identity.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Trigonometry",
+            "locator": "trigonometry:1-basic-identities/1.1-pythagorean:1"
+          }
+        ]
+      }
     }
   ],
   "identity": "trigonometry:1-basic-identities/1.1-pythagorean"

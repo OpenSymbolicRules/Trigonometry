@@ -11,9 +11,24 @@
     {
       "id": 1,
       "description": "Tangent cancels the principal inverse tangent for complex arguments (Fungrim 1f026d).",
-      "pattern": ["Tan", ["Atan", "z_"]],
+      "pattern": [
+        "Tan",
+        [
+          "Atan",
+          "z_"
+        ]
+      ],
       "constraints": [],
-      "result": "z_"
+      "result": "z_",
+      "provenance": {
+        "method": "transcribed",
+        "sources": [
+          {
+            "name": "Fungrim MathJSON",
+            "locator": "corpus/atan.json#1f026d"
+          }
+        ]
+      }
     }
   ]
 }
