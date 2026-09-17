@@ -1,0 +1,31 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "identity": "trigonometry:1-basic-identities/1.5-power-reduction",
+  "section": "1.5",
+  "title": "Power-Reduction Identities",
+  "semantics": {
+    "Add": "openmath:arith1#plus",
+    "Subtract": "openmath:arith1#minus",
+    "Multiply": "openmath:arith1#times",
+    "Divide": "openmath:arith1#divide",
+    "Power": "openmath:arith1#power",
+    "Sin": "openmath:transc1#sin",
+    "Cos": "openmath:transc1#cos"
+  },
+  "rules": [
+    {
+      "id": 1,
+      "description": "Sine-square power reduction over the complex domain (Fungrim cf6e35).",
+      "pattern": ["Power", ["Sin", "x_"], 2],
+      "constraints": [],
+      "result": ["Divide", ["Subtract", 1, ["Cos", ["Multiply", 2, "x_"]]], 2]
+    },
+    {
+      "id": 2,
+      "description": "Cosine-square power reduction, following from the Pythagorean and cosine double-angle identities.",
+      "pattern": ["Power", ["Cos", "x_"], 2],
+      "constraints": [],
+      "result": ["Divide", ["Add", 1, ["Cos", ["Multiply", 2, "x_"]]], 2]
+    }
+  ]
+}

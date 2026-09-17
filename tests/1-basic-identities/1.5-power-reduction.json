@@ -1,0 +1,23 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "1.5",
+  "title": "Power-Reduction Identity Tests",
+  "tests": [
+    {
+      "id": 1,
+      "expression": ["Power", ["Sin", "x"], 2],
+      "variable": "x",
+      "expected_result": ["Divide", ["Subtract", 1, ["Cos", ["Multiply", 2, "x"]]], 2],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "expression": ["Power", ["Cos", "x"], 2],
+      "variable": "x",
+      "expected_result": ["Divide", ["Add", 1, ["Cos", ["Multiply", 2, "x"]]], 2],
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}
