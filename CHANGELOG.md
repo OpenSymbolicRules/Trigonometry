@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Stable `identity` values for rule files, completing canonical `identity:id`
   rule identifiers.
+- Product-to-sum identities for `sin(a) cos(b)` and `sin(a) sin(b)`, with
+  OpenMath semantics and Fungrim-derived fixtures.
 - Initial trigonometric rules structure.
 - Pythagorean identity rule.
 - Sine angle-sum and cosine angle-difference identities with OpenMath semantics.

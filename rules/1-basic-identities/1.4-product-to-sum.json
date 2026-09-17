@@ -1,0 +1,30 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "identity": "trigonometry:1-basic-identities/1.4-product-to-sum",
+  "section": "1.4",
+  "title": "Product-to-Sum Identities",
+  "semantics": {
+    "Add": "openmath:arith1#plus",
+    "Subtract": "openmath:arith1#minus",
+    "Multiply": "openmath:arith1#times",
+    "Divide": "openmath:arith1#divide",
+    "Sin": "openmath:transc1#sin",
+    "Cos": "openmath:transc1#cos"
+  },
+  "rules": [
+    {
+      "id": 1,
+      "description": "Product-to-sum identity for sine times cosine over the complex domain (Fungrim 012eba).",
+      "pattern": ["Multiply", ["Sin", "a_"], ["Cos", "b_"]],
+      "constraints": [],
+      "result": ["Divide", ["Add", ["Sin", ["Add", "a_", "b_"]], ["Sin", ["Subtract", "a_", "b_"]]], 2]
+    },
+    {
+      "id": 2,
+      "description": "Product-to-sum identity for two sines over the complex domain (Fungrim ad6c1c).",
+      "pattern": ["Multiply", ["Sin", "a_"], ["Sin", "b_"]],
+      "constraints": [],
+      "result": ["Divide", ["Subtract", ["Cos", ["Subtract", "a_", "b_"]], ["Cos", ["Add", "a_", "b_"]]], 2]
+    }
+  ]
+}
