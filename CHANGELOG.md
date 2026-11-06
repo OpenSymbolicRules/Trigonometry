@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- OSR v1 rule set and verification report in `v1/`, generated from the Lean
+  proofs of `OpenSymbolicRules/Lean` and copied from the published
+  `OpenSymbolicRules/Verification` report, with a CI check of schema
+  validity, source digest and byte identity (`scripts/check-v1.sh`).
 - CI validation that every operator used by a rule has a declared OpenMath
   semantic mapping.
 - Sum-to-product identities in a dedicated `sum_to_product` profile, keeping
@@ -27,4 +31,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MIT licensing, an OpenMath attribution notice, and SPDX metadata in the rule manifest.
 
 ### Changed
+- Updated the Specification submodule to the OSR v1 draft.
 - Normalized arithmetic operators and wildcards to OSR v0.1 conventions.

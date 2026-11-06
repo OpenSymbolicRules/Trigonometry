@@ -17,6 +17,15 @@ unconditional use of these analytic identities.
 The inverse-tangent cancellation follows Fungrim entry `1f026d`; the reverse
 direction is excluded because it requires a principal-branch restriction.
 
+## OSR v1
+
+`v1/` holds the rule set in the OSR v1 format, generated from Lean proofs
+(`OpenSymbolicRules/Lean`) and published by `OpenSymbolicRules/Verification`.
+See [docs/osr-v1.md](docs/osr-v1.md).  Check it with:
+```bash
+./scripts/check-v1.sh [<Verification report directory>]
+```
+
 ## Validation
 To validate the rules against the OSR schemas, run:
 ```bash
