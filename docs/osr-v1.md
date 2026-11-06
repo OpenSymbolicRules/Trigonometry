@@ -27,7 +27,8 @@ The v0.1 files in `rules/` remain for the v0.1 loader of OpenSymbolicRules.jl
 and will be removed in a later breaking release.  In v1:
 
 - the four profiles `default`, `product_to_sum`, `power_reduction` and
-  `sum_to_product` terminate under the reference strategy; the v0.1 profiles
+  `sum_to_product` are proved to terminate under the reference strategy
+  (Lean `OSR.Trigonometry.normalize_terminates`); the v0.1 profiles
   contained three cycles (angle sum and product to sum, angle difference and
   product to sum, double angle and power reduction);
 - every rule carries a proof record instead of a provenance note;
