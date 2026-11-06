@@ -10,30 +10,34 @@
 #    published verification report.
 set -euo pipefail
 
+name=trigonometry
+files=("$name.osr.json" "$name.report.json" "$name.report.md")
+
 cd "$(dirname "$0")/.."
 
 check-jsonschema --schemafile Specification/schemas/v1/ruleset.schema.json \
-  v1/trigonometry.osr.json
+  "v1/$name.osr.json"
 
-python3 - <<'EOF'
+python3 - "$name" <<'PY'
 import json
 import sys
 
-ruleset = json.load(open("v1/trigonometry.osr.json"))
-report = json.load(open("v1/report.json"))
+name = sys.argv[1]
+ruleset = json.load(open(f"v1/{name}.osr.json"))
+report = json.load(open(f"v1/{name}.report.json"))
 a = ruleset["build"]["source_digest"]
 b = report["build"]["source_digest"]
 if a != b:
     sys.exit(f"source digest mismatch: rule set {a}, report {b}")
 digest = a.removeprefix("sha256:")
-if digest not in open("v1/report.md").read():
-    sys.exit(f"report.md does not mention the source digest {digest}")
+if digest not in open(f"v1/{name}.report.md").read():
+    sys.exit(f"{name}.report.md does not mention the source digest {digest}")
 print(f"v1/: {len(ruleset['rules'])} rules, source digest {a}")
-EOF
+PY
 
 if [ $# -ge 1 ]; then
   status=0
-  for f in trigonometry.osr.json report.json report.md; do
+  for f in "${files[@]}"; do
     if cmp -s "v1/$f" "$1/$f"; then
       echo "identical: $f"
     else

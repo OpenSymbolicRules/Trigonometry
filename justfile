@@ -18,5 +18,5 @@ v1 report="":
 
 # Copy the v1 files from a Verification report directory, then check them.
 update-v1 report:
-	cp {{report}}/trigonometry.osr.json {{report}}/report.json {{report}}/report.md v1/
+	cp {{report}}/trigonometry.osr.json {{report}}/trigonometry.report.json {{report}}/trigonometry.report.md v1/
 	./scripts/check-v1.sh {{report}}

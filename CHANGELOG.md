@@ -32,5 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MIT licensing, an OpenMath attribution notice, and SPDX metadata in the rule manifest.
 
 ### Changed
+- `v1/report.json` and `v1/report.md` are renamed `v1/trigonometry.report.json`
+  and `v1/trigonometry.report.md`, as published by Verification.
 - Updated the Specification submodule to the OSR v1 draft.
 - Normalized arithmetic operators and wildcards to OSR v0.1 conventions.

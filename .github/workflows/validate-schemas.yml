@@ -36,10 +36,10 @@ jobs:
       - uses: actions/checkout@v7
         with:
           repository: OpenSymbolicRules/Verification
-          ref: 56d3b90038e6bf17ee8ccf5f60f06125a7a457f4
+          ref: c0949d6e98b9fa5f230251963d5afaa170418af7
           path: verification
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: python -m pip install check-jsonschema==0.38.0
-      - run: scripts/check-v1.sh "verification/reports/$(python3 -c 'import json; print(json.load(open("v1/report.json"))["build"]["source_digest"].removeprefix("sha256:"))')"
+      - run: scripts/check-v1.sh "verification/reports/$(python3 -c 'import json; print(json.load(open("v1/trigonometry.report.json"))["build"]["source_digest"].removeprefix("sha256:"))')"

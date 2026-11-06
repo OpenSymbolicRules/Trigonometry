@@ -7,8 +7,8 @@ by hand:
 | File | Content |
 |---|---|
 | `v1/trigonometry.osr.json` | The 13 rules: OpenMath patterns, conditions, profiles, and per-domain verification records (Lean theorem, status, assurance). |
-| `v1/report.json` | Machine-readable audit: metrics per domain and the termination check of every profile. |
-| `v1/report.md` | The same audit for humans. |
+| `v1/trigonometry.report.json` | Machine-readable audit: metrics per domain and the termination proof of every profile. |
+| `v1/trigonometry.report.md` | The same audit for humans. |
 
 ## Where they come from
 

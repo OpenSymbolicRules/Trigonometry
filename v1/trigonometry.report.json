@@ -67,9 +67,12 @@
   "fuel": 64,
   "engine":
   "OSR.normalize (reference rewriter, proved sound: OSR.normalize_sound)"},
+ "ruleset": "trigonometry",
  "osr_format": "1.0.0-alpha.1",
+ "not_migrated": [],
  "metrics":
  {"rules_with_findings": 8,
+  "rules_not_migrated": 0,
   "rules_migrated": 13,
   "rules_exported": 13,
   "real":
@@ -90,6 +93,6 @@
    "blocked_by_mapping_assurance": 1}},
  "build":
  {"source_digest":
-  "sha256:5ba7794ee1652623a4fb6eb3d030147d3527b82dfa0043c70bd99aefecb6012a",
+  "sha256:a6649bd5fb8c68ee90cee2b4d1b287b0d2ae2dde2ce6332a80d8fbbe1afc9013",
   "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
   "lean_toolchain": "leanprover/lean4:v4.35.0"}}
