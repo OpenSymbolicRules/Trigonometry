@@ -2,7 +2,14 @@
  {"seeds": 21,
   "profiles":
   {"sum_to_product":
-   {"terminates_on_seeds": true,
+   {"termination":
+    {"weight": "OSR.Trigonometry.sumToProductWeight",
+     "theorem": "OSR.Trigonometry.sumToProduct_terminates",
+     "status": "proved",
+     "statement":
+     "OSR.Terminates (OSR.Trigonometry.profileRules \"sum_to_product\") OSR.Trigonometry.sumToProductWeight",
+     "axioms": ["Classical.choice", "Quot.sound", "propext"]},
+    "terminates_on_seeds": true,
     "rules":
     ["trigonometry.pythagorean",
      "trigonometry.sum_to_product.sin_add_sin",
@@ -11,7 +18,14 @@
      "trigonometry.inverse.tan_arctan"],
     "max_steps": 1},
    "product_to_sum":
-   {"terminates_on_seeds": true,
+   {"termination":
+    {"weight": "OSR.Trigonometry.productToSumWeight",
+     "theorem": "OSR.Trigonometry.productToSum_terminates",
+     "status": "proved",
+     "statement":
+     "OSR.Terminates (OSR.Trigonometry.profileRules \"product_to_sum\") OSR.Trigonometry.productToSumWeight",
+     "axioms": ["Classical.choice", "Quot.sound", "propext"]},
+    "terminates_on_seeds": true,
     "rules":
     ["trigonometry.pythagorean",
      "trigonometry.product_to_sum.sin_cos",
@@ -19,7 +33,14 @@
      "trigonometry.inverse.tan_arctan"],
     "max_steps": 1},
    "power_reduction":
-   {"terminates_on_seeds": true,
+   {"termination":
+    {"weight": "OSR.Trigonometry.powerReductionWeight",
+     "theorem": "OSR.Trigonometry.powerReduction_terminates",
+     "status": "proved",
+     "statement":
+     "OSR.Terminates (OSR.Trigonometry.profileRules \"power_reduction\") OSR.Trigonometry.powerReductionWeight",
+     "axioms": ["Classical.choice", "Quot.sound", "propext"]},
+    "terminates_on_seeds": true,
     "rules":
     ["trigonometry.pythagorean",
      "trigonometry.power_reduction.sin_sq",
@@ -27,7 +48,14 @@
      "trigonometry.inverse.tan_arctan"],
     "max_steps": 1},
    "default":
-   {"terminates_on_seeds": true,
+   {"termination":
+    {"weight": "OSR.Trigonometry.defaultWeight",
+     "theorem": "OSR.Trigonometry.default_terminates",
+     "status": "proved",
+     "statement":
+     "OSR.Terminates (OSR.Trigonometry.profileRules \"default\") OSR.Trigonometry.defaultWeight",
+     "axioms": ["Classical.choice", "Quot.sound", "propext"]},
+    "terminates_on_seeds": true,
     "rules":
     ["trigonometry.pythagorean",
      "trigonometry.angle_sum.sin_add",
@@ -62,6 +90,6 @@
    "blocked_by_mapping_assurance": 1}},
  "build":
  {"source_digest":
-  "sha256:13f7a913cefe89361c83845e10a526b8e6fb9a8214ee8c43870c72f9dbcf04d3",
+  "sha256:6b9f920f9221af366e267b5d50f762204aa1624a62efa94c802c76fea3a10108",
   "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
   "lean_toolchain": "leanprover/lean4:v4.35.0"}}
