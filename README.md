@@ -29,7 +29,8 @@ See [docs/osr-v1.md](docs/osr-v1.md).  Check it with:
 ## Validation
 To validate the rules against the OSR schemas, run:
 ```bash
-./scripts/validate.sh
+just check        # v0.1 schemas, semantic closure and v1 files
+just v1 <report>  # also compare v1/ with a Verification report directory
 ```
 
 ## License

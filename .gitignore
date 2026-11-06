@@ -5,6 +5,8 @@
 !*.md
 !*.json
 !*.sh
+!*.py
+!justfile
 
 .git/
 .DS_Store

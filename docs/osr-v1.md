@@ -38,8 +38,7 @@ and will be removed in a later breaking release.  In v1:
 ## Updating
 
 ```bash
-cp <Verification>/reports/<digest>/{trigonometry.osr.json,report.json,report.md} v1/
-scripts/check-v1.sh <Verification>/reports/<digest>
+just update-v1 <Verification>/reports/<digest>
 ```
 
 Then update the Verification commit pinned in
